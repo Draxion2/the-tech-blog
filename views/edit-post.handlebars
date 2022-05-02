@@ -3,7 +3,7 @@
     <h2>
         Edit Post
     </h2>
-    <form>
+    <form class="edit-post-form">
         <div>
             <input name="post-title" type="text" value="{{post.title}}">
         </div>
@@ -11,10 +11,10 @@
             <a href="/post/{{post.id}}">{{post.comments.length}} {{"comment" post.comments.length}}</a>
         </div>
         <button type="submit">Save post</button>
-        <button type="button">Delete post</button>
+        <button type="button" class="delete-post-btn">Delete post</button>
     </form>
 </article>
-<form>
+<form class="commet-form">
     <div>
         <textarea name="comment-body"></textarea>
     </div>
@@ -23,6 +23,6 @@
     </div>
 </form>
 {{> comments post.comments}}
-<script src="/public/javascript/edit-post.js"></script>
-<script src="/public/javascript/delete-post.js"></script>
-<script src="/public/javascript/comment.js"></script>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

@@ -1,7 +1,7 @@
 :root {
     --black: #000;
     --white: #fff;
-    --light: #eee;
+    --light: rgb(206, 202, 202);
     --primary: #685c55;
     --secondary: #d5dac4;
     --tertiary: #b2ccde;
@@ -56,6 +56,7 @@ h1 {
 nav {
     float: right;
 }
+
 nav button {
     background-color: var(--primary-border);
     color: var(--white);
@@ -74,3 +75,26 @@ nav button:hover {
     margin-left: 10px;
 }
 /* header end */
+
+/* posts start */
+.posts {
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid var(--primary-border)
+}
+
+.post_title {
+    width: 100%;
+    background-color: var(--primary-border);
+    color: var(--black);
+    padding: 10px;
+}
+
+.post_info {
+    font-size: 12px;
+}
+
+.contents {
+    background-color: var(--white);
+    padding: 15px;
+}

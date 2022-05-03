@@ -1,3 +1,5 @@
+<h2 id="dashboardTitle">Your Dashboard</h2>
+<hr>
 <section id="new-post-form-display">
     <form class="new-post-form">
         <div>
@@ -17,7 +19,7 @@
     <h2 class="your-posts-title">Your Posts</h2>
     <ol>
         {{#each posts as |post|}}
-        <a href="/dashboard/edit/{{post.id}}" class="edit-link">
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link" title="Edit Post">
             <li>
                 {{> post-info post}}
             </li>
@@ -27,6 +29,6 @@
 </section>
 {{/if}}
 <div id="newPostBtnDisplay">
-    <button id="addNewPostBtn">NEW POST +</button>
+    <button id="addNewPostBtn" title="Create new post">NEW POST +</button>
 </div>
 <script src="/javascript/add-post.js"></script>

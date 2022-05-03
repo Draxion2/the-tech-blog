@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <h1><a id="logo" href="/">The Tech Blog</a></h1>
+        <h1><a id="logo" href="/" title="Return Home">The Tech Blog</a></h1>
         <nav>
             {{#if loggedIn}}
-            <a href="/dashboard"><button>Dashboard</button></a>
-            <button id="logout">Logout</button>
+            <a href="/dashboard" title="Your Dashboard"><button>Dashboard</button></a>
+            <button id="logout" title="Logout">Logout</button>
             {{else}}
             <a href="/login"><button>Login</button></a>
             {{/if}}

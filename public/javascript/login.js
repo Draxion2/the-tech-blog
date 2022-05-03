@@ -54,9 +54,12 @@ async function loginFormHandler(event) {
     }
 }
 
-document.querySelector(".signup-form").addEventListener("submit", signupFormHandler);
-document.querySelector(".login-form").addEventListener("submit", loginFormHandler);
-document.querySelector("#showSignup").addEventListener("click", function() {
+function showSignup() {
     document.querySelector(".login-form").style.display = "none";
     document.querySelector(".signup-form").style.display = "block";
-});
+}
+
+document.querySelector(".signup-form").addEventListener("submit", signupFormHandler);
+document.querySelector(".login-form").addEventListener("submit", loginFormHandler);
+document.querySelector("#showSignup").addEventListener("click", showSignup);
+document.querySelector("#goBack").addEventListener("click", function() {document.location.reload();});

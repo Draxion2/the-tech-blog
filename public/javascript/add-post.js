@@ -21,9 +21,6 @@ async function newFormHandler(event) {
     }
 };
 
-// change logo to dashboard
-document.querySelector("#logo").innerHTML = "Your Dashboard";
-
 document.querySelector(".new-post-form").addEventListener("submit", newFormHandler);
 document.querySelector("#addNewPostBtn").addEventListener("click", function() {
     document.querySelector("#new-post-form-display").style.display = "block";

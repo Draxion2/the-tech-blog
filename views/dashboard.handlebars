@@ -1,12 +1,11 @@
-<section>
-    <h2>Create New Post</h2>
+<section id="new-post-form-display">
     <form class="new-post-form">
         <div>
-            <label for="post-title">Title</label>
+            <label for="post-title">TITLE</label><br>
             <input type="text" id="post-title" name="post-title">
         </div>
         <div>
-            <label for="post-contents">Contents</label>
+            <label for="post-contents">CONTENTS</label><br>
             <textarea name="post-contents" id="post-contents"></textarea>
         </div>
         <button type="submit">Create</button>
@@ -26,4 +25,7 @@
     </ol>
 </section>
 {{/if}}
+<div id="newPostBtnDisplay">
+    <button id="addNewPostBtn">NEW POST +</button>
+</div>
 <script src="/javascript/add-post.js"></script>

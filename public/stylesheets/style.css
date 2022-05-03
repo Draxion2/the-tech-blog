@@ -95,7 +95,8 @@ nav button:hover {
     margin: 0 auto;
     margin-top: 15px;
     width: 90%;
-    border: 2px solid var(--primary-border)
+    border: 2px solid var(--primary-border);
+    position: relative;
 }
 
 .post-list li {
@@ -106,12 +107,16 @@ nav button:hover {
 .post_title {
     width: 100%;
     background-color: var(--primary-border);
-    color: var(--black);
+    color: var(--tertiary);
     padding: 10px;
 }
 
 .post_info {
     font-size: 12px;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    color: var(--white);
 }
 
 .contents {

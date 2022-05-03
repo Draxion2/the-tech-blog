@@ -80,17 +80,15 @@ nav button:hover {
 }
 /* header end */
 
-#dashboardTitle {
-    margin-top: 10px;
-    text-align: center;
-}
-
-/* posts start */
+/* titles */
+#dashboardTitle,
+.edit-post-title,
 .your-posts-title {
     margin-top: 10px;
     text-align: center;
 }
 
+/* posts start */ 
 .posts {
     margin: 0 auto;
     margin-top: 15px;
@@ -141,12 +139,14 @@ nav button:hover {
 .comment div {
     margin: 10px 0;
 }
-
 /* comments end */
 
-/* login/signup forms start */
+/* all forms start */
 .login-form,
-.signup-form {
+.signup-form,
+.new-post-form,
+.edit-post-form,
+.comment-form {
     width: 90%;
     margin: 0 auto;
     background-color: var(--primary);
@@ -155,12 +155,15 @@ nav button:hover {
     margin-top: 20px;
 }
 
-.signup-form {
+.signup-form,
+#new-post-form-display {
     display: none;
 }
 
 .login-form div,
-.signup-form div {
+.signup-form div,
+.new-post-form div,
+.edit-post-form div {
     width: 100%;
     margin: 0 auto;
     margin: 10px 0;
@@ -169,12 +172,28 @@ nav button:hover {
 .login-form label,
 .login-form input,
 .signup-form label,
-.signup-form input {
+.signup-form input,
+.new-post-form input,
+.new-post-form label,
+.edit-post-form label,
+.edit-post-form input {
     width: 100%;
 }
 
+.new-post-form textarea,
+.edit-post-form textarea,
+.comment-form textarea {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
 .login-form button,
-.signup-form button {
+.signup-form button,
+.new-post-form button,
+#addNewPostBtn,
+.edit-post-form button,
+.comment-form button {
     background-color: var(--primary-border);
     color: var(--white);
     padding: 5px;
@@ -184,54 +203,11 @@ nav button:hover {
 }
 
 .login-form button:hover,
-.signup-form button:hover {
-    background-color: var(--white);
-    color: var(--black);
-    transition: 300ms;
-    cursor: pointer;
-}
-/* login/signup forms end */
-
-/* new post from start */
-#new-post-form-display {
-    display: none;
-}
-.new-post-form {
-    width: 90%;
-    margin: 0 auto;
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.new-post-form input,
-.new-post-form label {
-    width: 100%;
-}
-
-.new-post-form textarea {
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-}
-
-.new-post-form div {
-    width: 100%;
-    margin: 0 auto;
-    margin: 10px 0;
-}
-
-.new-post-form button {
-    background-color: var(--primary-border);
-    color: var(--white);
-    padding: 5px;
-    margin: 5px 0;
-    width: 100%;
-    transition: 300ms;
-}
-
-.new-post-form button:hover {
+.signup-form button:hover,
+.new-post-form button:hover,
+#addNewPostBtn:hover,
+.edit-post-form button:hover,
+.comment-form button:hover {
     background-color: var(--white);
     color: var(--black);
     transition: 300ms;
@@ -243,101 +219,4 @@ nav button:hover {
     width: 50%;
     margin-top: 20px;
 }
-
-#addNewPostBtn {
-    background-color: var(--primary-border);
-    color: var(--white);
-    border-radius: 5px;
-    padding: 5px;
-    width: 100%;
-    transition: 300ms;
-}
-
-#addNewPostBtn:hover {
-    background-color: var(--white);
-    color: var(--black);
-    transition: 300ms;
-    cursor: pointer;
-}
-
-/* new post form end */
-
-/* edit post form start */
-.edit-post-title {
-    margin-top: 10px;
-    text-align: center;
-}
-.edit-post-form {
-    width: 90%;
-    margin: 0 auto;
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.edit-post-form label,
-.edit-post-form input {
-    width: 100%;
-}
-
-.edit-post-form textarea {
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-}
-
-.edit-post-form div {
-    width: 100%;
-    margin: 0 auto;
-    margin: 10px 0;
-}
-
-.edit-post-form button {
-    background-color: var(--primary-border);
-    color: var(--white);
-    padding: 5px;
-    margin: 5px 0;
-    width: 100%;
-    transition: 300ms;
-}
-
-.edit-post-form button:hover {
-    background-color: var(--white);
-    color: var(--black);
-    transition: 300ms;
-    cursor: pointer;
-}
-
-/* comment form start */
-.comment-form {
-    width: 90%;
-    margin: 0 auto;
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.comment-form textarea {
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-}
-
-.comment-form button {
-    background-color: var(--primary-border);
-    color: var(--white);
-    padding: 5px;
-    margin: 5px 0;
-    width: 100%;
-    transition: 300ms;
-}
-
-.comment-form button:hover {
-    background-color: var(--white);
-    color: var(--black);
-    transition: 300ms;
-    cursor: pointer;
-}
-/* comment form end */
+/* all forms end */

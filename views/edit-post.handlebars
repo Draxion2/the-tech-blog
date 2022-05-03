@@ -1,14 +1,15 @@
 <article>
-    <a href="/dashboard"> &larr; Back to dashboard</a>
-    <h2>
+    <h2 class="edit-post-title">
         Edit Post
     </h2>
     <form class="edit-post-form">
         <div>
+            <label for="post-title">TITLE:</label><br>
             <input name="post-title" type="text" value="{{post.title}}">
         </div>
         <div>
-            <a href="/post/{{post.id}}">{{post.comments.length}}</a>
+            <label for="post-contents">CONTENT:</label><br>
+            <textarea name="post-contents">{{post.contents}}</textarea>
         </div>
         <button type="submit">Save post</button>
         <button type="button" class="delete-post-btn">Delete post</button>

@@ -275,3 +275,35 @@ nav button:hover {
     transition: 300ms;
     cursor: pointer;
 }
+
+/* comment form start */
+.comment-form {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+.comment-form button {
+    background-color: var(--primary-border);
+    color: var(--white);
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+    transition: 300ms;
+}
+
+.comment-form button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transition: 300ms;
+    cursor: pointer;
+}

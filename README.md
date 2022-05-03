@@ -17,6 +17,8 @@ This project is a full-stack application that allows a user to create an account
 
 To provide a place for people with similiar interests in technology to post and comment on exisiting posts from other users.
 
+![alt text](https://i.gyazo.com/14481900e6cd51ed2d480218c996424f.png)
+
 ## Installation
 
 This app uses the command line, sql database, handlebars.js, and node.js to function properly.
@@ -36,8 +38,6 @@ This app uses the command line, sql database, handlebars.js, and node.js to func
 * Exit the SQL terminal by typing 'quit'
 * Run the server by entering on the command line 'npm start'
 
-(Screenshot here)
-
 ## Built With
 
 * JavaScript
@@ -48,6 +48,10 @@ This app uses the command line, sql database, handlebars.js, and node.js to func
 * Session
 * Node.js
 * MySQL
+
+__Live Demo__
+
+[https://draxion2techblog.herokuapp.com/](https://draxion2techblog.herokuapp.com/)
 
 ## License
 

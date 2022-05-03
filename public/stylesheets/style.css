@@ -83,6 +83,11 @@ nav button:hover {
     border: 2px solid var(--primary-border)
 }
 
+.post-list li {
+    list-style: none;
+    margin: 15px 0;
+}
+
 .post_title {
     width: 100%;
     background-color: var(--primary-border);
@@ -97,4 +102,53 @@ nav button:hover {
 .contents {
     background-color: var(--white);
     padding: 15px;
+}
+/* posts end */
+
+/* login/signup forms start */
+.login-form,
+.signup-form {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+    transition: 300ms;
+}
+
+.signup-form {
+    display: none;
+}
+
+.login-form div,
+.signup-form div {
+    width: 100%;
+    margin: 0 auto;
+    margin: 10px 0;
+}
+
+.login-form label,
+.login-form input,
+.signup-form label,
+.signup-form input {
+    width: 100%;
+}
+
+.login-form button,
+.signup-form button {
+    background-color: var(--primary-border);
+    color: var(--white);
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+    transition: 300ms;
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transition: 300ms;
+    cursor: pointer;
 }

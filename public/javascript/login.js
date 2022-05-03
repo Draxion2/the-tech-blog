@@ -21,6 +21,7 @@ async function signupFormHandler(event) {
         });
         if (response.ok) {
             console.log("SUCCESS");
+            document.location.replace("/dashboard");
         } else {
             alert(response.statusText);
         }
@@ -55,3 +56,7 @@ async function loginFormHandler(event) {
 
 document.querySelector(".signup-form").addEventListener("submit", signupFormHandler);
 document.querySelector(".login-form").addEventListener("submit", loginFormHandler);
+document.querySelector("#showSignup").addEventListener("click", function() {
+    document.querySelector(".login-form").style.display = "none";
+    document.querySelector(".signup-form").style.display = "block";
+});

@@ -1,7 +1,7 @@
 const sequelize = require("../../config/connection");
 const router = require("express").Router();
 const { Post, User, Comment } = require("../../models");
-const withAuth = require("../../utils/auth");
+const authentication = require("../../utils/authentication");
 
 // get all posts
 router.get("/", (req, res) => {
@@ -76,7 +76,7 @@ router.get("/:id", (req, res) => {
 });
 
 // create a post
-router.post("/", withAuth, (req, res) => {
+router.post("/", authentication, (req, res) => {
     Post.create({
         title: req.body.title,
         contents: req.body.contents,
@@ -90,7 +90,7 @@ router.post("/", withAuth, (req, res) => {
 });
 
 // update a post's title & contents
-router.put("/:id", withAuth, (req, res) => {
+router.put("/:id", authentication, (req, res) => {
     Post.update(
         {
             title: req.body.title,
@@ -116,7 +116,7 @@ router.put("/:id", withAuth, (req, res) => {
 });
 
 // delete a post
-router.delete("/:id", withAuth, (req, res) => {
+router.delete("/:id", authentication, (req, res) => {
     Post.destroy({
         where: {
             id: req.params.id
